@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Linkedin, Github, Twitter, Mail } from 'lucide-react';
+import { Linkedin, Github, Twitter, Mail, Instagram } from 'lucide-react';
 
 const leaders = [
   {
@@ -9,38 +9,38 @@ const leaders = [
     role: "Overall Coordinator",
     avatar: "https://placehold.co/100x100.png",
     aiHint: "indian man portrait",
-    socials: { linkedin: "#", mail: "#" }
+    socials: { linkedin: "#", mail: "#" , instagram: "#" }
   },
   {
     name: "Priya Singh",
     role: "Overall Coordinator",
     avatar: "https://placehold.co/100x100.png",
     aiHint: "indian woman portrait",
-    socials: { linkedin: "#", mail: "#" }
+    socials: { linkedin: "#", mail: "#", instagram: "#" }
   }
 ];
 
 const secretaries = [
-  { name: "Rohan Verma", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "smiling man portrait", socials: { linkedin: "#", mail: "#" }},
-  { name: "Sneha Reddy", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "smiling woman portrait", socials: { linkedin: "#", mail: "#" }},
-  { name: "Vikram Kumar", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "indian man portrait", socials: { linkedin: "#", mail: "#" }},
-  { name: "Anjali Gupta", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "indian woman portrait", socials: { linkedin: "#", mail: "#" }},
-  { name: "Suresh Patel", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "smiling man portrait", socials: { linkedin: "#", mail: "#" }},
-  { name: "Meera Desai", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "smiling woman portrait", socials: { linkedin: "#", mail: "#" }},
-  { name: "Arjun Mehta", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "indian man portrait", socials: { linkedin: "#", mail: "#" }},
-  { name: "Kavita Iyer", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "indian woman portrait", socials: { linkedin: "#", mail: "#" }},
-  { name: "Harish Nair", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "smiling man portrait", socials: { linkedin: "#", mail: "#" }},
-  { name: "Divya Chauhan", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "smiling woman portrait", socials: { linkedin: "#", mail: "#" }},
-  { name: "Nikhil Joshi", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "indian man portrait", socials: { linkedin: "#", mail: "#" }},
-  { name: "Pooja Malhotra", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "indian woman portrait", socials: { linkedin: "#", mail: "#" }},
-  { name: "Sandeep Rao", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "smiling man portrait", socials: { linkedin: "#", mail: "#" }},
-  { name: "Sunita Menon", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "smiling woman portrait", socials: { linkedin: "#", mail: "#" }},
-  { name: "Amit Kumar", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "indian man portrait", socials: { linkedin: "#", mail: "#" }},
-  { name: "Geeta Pillai", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "indian woman portrait", socials: { linkedin: "#", mail: "#" }},
-  { name: "Manoj Tiwari", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "smiling man portrait", socials: { linkedin: "#", mail: "#" }},
-  { name: "Rina Shah", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "smiling woman portrait", socials: { linkedin: "#", mail: "#" }},
-  { name: "Rajesh Kannan", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "indian man portrait", socials: { linkedin: "#", mail: "#" }},
-  { name: "Anita Krishnan", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "indian woman portrait", socials: { linkedin: "#", mail: "#" }}
+  { name: "Rohan Verma", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "smiling man portrait", socials: { linkedin: "#", mail: "#" , instagram: "#"}},
+  { name: "Sneha Reddy", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "smiling woman portrait", socials: { linkedin: "#", mail: "#" , instagram: "#"}},
+  { name: "Vikram Kumar", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "indian man portrait", socials: { linkedin: "#", mail: "#", instagram: "#" }},
+  { name: "Anjali Gupta", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "indian woman portrait", socials: { linkedin: "#", mail: "#" , instagram: "#"}},
+  { name: "Suresh Patel", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "smiling man portrait", socials: { linkedin: "#", mail: "#" , instagram: "#"}},
+  { name: "Meera Desai", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "smiling woman portrait", socials: { linkedin: "#", mail: "#", instagram: "#" }},
+  { name: "Arjun Mehta", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "indian man portrait", socials: { linkedin: "#", mail: "#" , instagram: "#"}},
+  { name: "Kavita Iyer", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "indian woman portrait", socials: { linkedin: "#", mail: "#" , instagram: "#"}},
+  { name: "Harish Nair", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "smiling man portrait", socials: { linkedin: "#", mail: "#", instagram: "#" }},
+  { name: "Divya Chauhan", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "smiling woman portrait", socials: { linkedin: "#", mail: "#", instagram: "#" }},
+  { name: "Nikhil Joshi", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "indian man portrait", socials: { linkedin: "#", mail: "#", instagram: "#" }},
+  { name: "Pooja Malhotra", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "indian woman portrait", socials: { linkedin: "#", mail: "#" , instagram: "#"}},
+  { name: "Sandeep Rao", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "smiling man portrait", socials: { linkedin: "#", mail: "#", instagram: "#" }},
+  { name: "Sunita Menon", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "smiling woman portrait", socials: { linkedin: "#", mail: "#", instagram: "#" }},
+  { name: "Amit Kumar", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "indian man portrait", socials: { linkedin: "#", mail: "#", instagram: "#" }},
+  { name: "Geeta Pillai", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "indian woman portrait", socials: { linkedin: "#", mail: "#" , instagram: "#"}},
+  { name: "Manoj Tiwari", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "smiling man portrait", socials: { linkedin: "#", mail: "#" , instagram: "#"}},
+  { name: "Rina Shah", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "smiling woman portrait", socials: { linkedin: "#", mail: "#", instagram: "#" }},
+  { name: "Rajesh Kannan", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "indian man portrait", socials: { linkedin: "#", mail: "#", instagram: "#" }},
+  { name: "Anita Krishnan", role: "Secretary", avatar: "https://placehold.co/100x100.png", aiHint: "indian woman portrait", socials: { linkedin: "#", mail: "#", instagram: "#" }},
 ];
 
 export default function TeamSection() {
@@ -71,6 +71,7 @@ export default function TeamSection() {
                   <div className="flex gap-4 mt-4">
                     <a href={member.socials.linkedin} className="text-muted-foreground hover:text-primary transition-colors"><Linkedin className="h-5 w-5" /></a>
                     <a href={`mailto:${member.socials.mail}`} className="text-muted-foreground hover:text-primary transition-colors"><Mail className="h-5 w-5" /></a>
+                    <a href={member.socials.instagram} className="text-muted-foreground hover:text-primary transition-colors"><Instagram className="h-5 w-5" /></a>
                   </div>
                 </div>
               ))}
@@ -91,6 +92,7 @@ export default function TeamSection() {
                    <div className="flex gap-3 mt-3">
                     <a href={member.socials.linkedin} className="text-muted-foreground hover:text-primary transition-colors"><Linkedin className="h-4 w-4" /></a>
                     <a href={`mailto:${member.socials.mail}`} className="text-muted-foreground hover:text-primary transition-colors"><Mail className="h-4 w-4" /></a>
+                    <a href={member.socials.instagram} className="text-muted-foreground hover:text-primary transition-colors"><Instagram className="h-5 w-5" /></a>
                   </div>
                 </div>
               ))}
