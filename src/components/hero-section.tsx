@@ -4,9 +4,9 @@ import Image from 'next/image'
 import { cn } from '@/lib/utils'
 
 const heroImages = [
-  { src: 'https://placehold.co/400x400.png', alt: 'Structural Design', aiHint: 'architectural blueprint', className: 'row-span-2' },
-  { src: 'https://placehold.co/400x400.png', alt: 'Team Collaboration', aiHint: 'team meeting' },
-  { src: 'https://placehold.co/400x400.png', alt: 'Construction Site', aiHint: 'construction site' },
+  { src: '/main1.png', alt: 'Structural Design', aiHint: 'architectural blueprint', className: 'row-span-2' },
+  { src: '/mentee.jpeg', alt: 'Team Collaboration', aiHint: 'team meeting' },
+  { src: '/bdc.jpg', alt: 'Construction Site', aiHint: 'construction site' },
 ]
 
 export default function HeroSection() {
@@ -16,12 +16,18 @@ export default function HeroSection() {
 
       <div className="container mx-auto px-4 md:px-6 z-10 grid md:grid-cols-2 items-center gap-8">
         <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-6 animate-fade-in-up">
-          <Logo className="h-24 w-24 text-primary" />
+        <Logo width={82} height={82} className="text-primary" />
+                   
           <h1 className="text-5xl md:text-7xl font-bold font-headline tracking-tighter text-foreground">
             DesCon IITK Hub
           </h1>
           <p className="max-w-xl text-lg md:text-xl text-muted-foreground font-body">
-            The official hub for the Design & Construction Society of IIT Kanpur. Explore our projects, join our community, and build the future with us.
+          DesCon is a student-run club that focuses on structural design, 3D modeling, and model construction.
+We create detailed miniature models of buildings and structures, turning ideas into physical prototypes. From architectural designs to creative engineering concepts, our team works on a variety of projects that combine both creativity and technical skills.
+</p>
+<p className="max-w-xl text-lg md:text-xl text-muted-foreground font-body">
+
+At DesCon, members gain hands-on experience by developing digital models using industry-standard software, and participating in national-level competitions. Through these activities, we aim to build practical skills, encourage innovation, and foster a deeper understanding of structural design.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
             <Button size="lg" className="uppercase font-headline" asChild>

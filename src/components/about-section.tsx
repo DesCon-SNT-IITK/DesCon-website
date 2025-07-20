@@ -7,32 +7,40 @@ import {
 } from "@/components/ui/carousel"
 import { Card, CardContent, CardDescription, CardTitle } from "./ui/card"
 import Image from "next/image"
-import { Building, Wrench, DraftingCompass } from "lucide-react"
+import {
+  DraftingCompass,
+  Building,
+  Wrench,
+  Printer,
+  BrainCircuit,
+  Puzzle,
+} from "lucide-react";
+
 
 const highlights = [
   {
-    title: "Annual Bridge Design Competition",
-    description: "Our flagship event testing the limits of structural engineering and design.",
-    image: "https://placehold.co/600x400.png",
+    title: "Techkriti Bridge Design Competition",
+    description: "Our club secured 3rd place in the Techkriti Bridge Design Challenge. In this challenge, participants showcase their skills in crafting a miniature truss bridge using nothing but popsicle sticks and glue.",
+    image: "/bdc.jpg",
     aiHint: "bridge competition"
   },
   {
-    title: "Workshop on Sustainable Architecture",
-    description: "Exploring green building materials and eco-friendly construction techniques.",
-    image: "https://placehold.co/600x400.png",
-    aiHint: "sustainable architecture"
+    title: "SnT Pavilion",
+    description: "Conducted by the Science and Technology Council of the Students’ Gymkhana, IIT Kanpur, SnT Pavilion is a fresher’s first interaction with the core team members of the clubs, teams, and societies under the SnT Council.",
+    image: "/pavallion.webp",
+    aiHint: "student council event"
   },
   {
-    title: "Campus Infrastructure Project",
-    description: "Collaborated with the institute to propose and design a new student recreation area.",
-    image: "https://placehold.co/600x400.png",
-    aiHint: "campus infrastructure"
+    title: "Secretary Recruitment",
+    description: "The club successfully conducted its annual Secretary Recruitment Drive to welcome enthusiastic and capable students into its core team. The process focused on evaluating creativity, technical understanding, and initiative, resulting in the selection of individuals dedicated to driving the club’s vision forward.",
+    image: "/mentee.jpeg",
+    aiHint: "team recruitment"
   },
   {
-    title: "3D-Printed Model Exhibition",
-    description: "Showcasing intricate architectural and structural models created using 3D printing.",
-    image: "https://placehold.co/600x400.png",
-    aiHint: "3d model"
+    title: "Summer Projects",
+    description: "This summer, the club undertook four innovative projects: TwinKampus created a digital twin of the IITK campus for virtual exploration; BluePrintX automated the conversion of hand-drawn floor plans into digital versions; InfraScan developed an AI-based system using infrared imaging and MATLAB to detect structural defects; and MetaStructure built a detailed 3D model of a monument using Blender to enhance digital modeling skills.",
+    image: "/summer.png",
+    aiHint: "digital twin campus"
   },
 ]
 
@@ -40,19 +48,35 @@ const features = [
   {
     icon: <DraftingCompass className="h-10 w-10 text-primary" />,
     title: "Innovative Design",
-    description: "We foster creativity and cutting-edge design principles in all our projects, from conceptual sketches to detailed blueprints.",
+    description: "We foster creativity and cutting-edge design principles in all our projects, from conceptual sketches to detailed blueprints. \n Our team leverages modern tools such as CAD, BIM, and simulation software to bring ideas to life. \n We encourage interdisciplinary thinking, combining architecture, civil engineering, and sustainability to create functional yet imaginative solutions.",
   },
   {
     icon: <Building className="h-10 w-10 text-primary" />,
     title: "Structural Excellence",
-    description: "Our members gain hands-on experience in structural analysis and construction, ensuring stability and durability in every build.",
+    description: "Our members gain hands-on experience in structural analysis and construction, ensuring stability and durability in every build. We simulate real-world engineering challenges to strengthen our understanding of mechanics, materials, and loads. We push the boundaries of our knowledge by engaging in real-time simulations, load-testing mini models, and participating in student-led workshops. This approach helps us connect theory with application, fostering a strong foundation in structural thinking.",
   },
   {
     icon: <Wrench className="h-10 w-10 text-primary" />,
     title: "Practical Skills",
-    description: "Through workshops and real-world projects, we equip students with the practical skills needed in the civil engineering industry.",
+    description: "Workshops, industrial visits, and real-world projects form the backbone of our learning approach. We equip students with essential skills in surveying, estimation, project planning, and execution. Our focus is on making members industry-ready by giving them exposure to modern construction practices, teamwork, and communication—skills that are vital in the professional world of civil engineering.",
   },
-]
+  {
+    icon: <Printer className="h-10 w-10 text-primary" />,
+    title: "3D Printing & Prototyping",
+    description: "We embrace additive manufacturing to quickly prototype structures and models. \n Our members learn how to design for 3D printing and use it to test architectural forms, structural elements, and material behavior. This hands-on approach makes innovation accessible and visual, bridging the gap between design and reality.",
+  },
+  {
+    icon: <BrainCircuit className="h-10 w-10 text-primary" />,
+    title: "AI in Design & Construction",
+    description: "We explore how artificial intelligence can transform the future of civil engineering. From optimizing structural designs to predictive maintenance and generative architecture, we integrate machine learning and AI tools to enhance precision, efficiency, and sustainability in our projects.",
+  },
+  {
+    icon: <Puzzle className="h-10 w-10 text-primary" />,
+    title: "Miscellaneous Innovations",
+    description: "Our society promotes experimentation beyond the conventional. We dive into niche topics like earthquake-resistant design, smart materials, geotechnical modeling, and sustainable urban planning. These explorations broaden our perspectives and prepare us for future challenges in design and construction.",
+  },
+];
+
 
 export default function AboutSection() {
   return (
@@ -63,7 +87,7 @@ export default function AboutSection() {
             Pioneering Design and Construction
           </h2>
           <p className="max-w-3xl text-lg text-muted-foreground">
-            The Design & Construction Society (DesCon) at IIT Kanpur is a hub for students passionate about civil engineering, architecture, and project management. We bridge theory with practice, turning ambitious ideas into tangible realities.
+          The Design & Construction Society (DesCon) at IIT Kanpur is a hub for students passionate about civil engineering, architecture, and project management. We bridge theory with practice, turning ambitious ideas into tangible realities.
           </p>
         </div>
 

@@ -1,0 +1,86 @@
+
+[
+  
+    {
+      "id": "twinkampus-the-campus-twin",
+      "title": "TwinKampus - The Campus Twin",
+      "description": "A digital twin of the campus by designing simplified yet realistic 3D models of the buildings and developing an interactive web platform where users can explore the campus virtually.",
+      "image": "/twinkampus.png",
+      "tags": ["AutoCAD", "Node.js", "React", "Three.js", "Vercel"],
+      "status": "Completed",
+      "link":"https://docs.google.com/document/d/1yKe-Uwmc1ziIZW2X9Kwi8swJu8jjHxMmWwn7zBYOjvY/edit?usp=drive_link",
+      "aiHint": "digital twin campus",
+      "overview": "This project walks you through creating a digital twin—a virtual 3D replica—of a real-world campus or environment by combining AutoCAD modeling with React + Three.js for an immersive, web-based viewer. No team access or institutional permissions are needed—you can complete this independently using free or student-friendly resources. By the end, you will have: Built simplified 3D building models using floor plans, sketches, or satellite imagery in AutoCAD, exporting them in web-compatible formats (.obj, .glb, .fbx). Constructed a React-based website to display and explore those models dynamically. Mastered the tools AutoCAD, React, and Three.js, gaining experience in drafting, 3D modeling, web coding, and real-time visualization.",
+      "steps": [
+        "Established core development environment",
+        "Explored the basics and mastered the 3D modelling fundamentals (AutoCAD and Fusion 360)",
+        "Built interactive web front-end (React.js)",
+        "Integrated 3D rendering capabilities (Three.js)",
+        "Developed and optimized 3D web viewer",
+        "Refined and deployed the web application (Github pages / Vercel)",
+        "Documented and presented professionally (Canva and OBS Studio)"
+      ],
+      "mentors": ["Pushpender (Y23)", "Sumit Vishwakarma (Y23)"]
+    },
+    {
+      "id": "infrascan",
+      "title": "InfraScan",
+      "description": "An advanced AI-driven structural health monitoring system designed to detect structural anomalies using infrared imaging and deep learning techniques. This project leverages MATLAB for image processing, machine learning, and sensor data analysis, ensuring a precise and real-time defect detection system.",
+      "image": "/infra.png",
+      "tags": ["MATLAB", "Machine learning", "Image processing", "Deep learning", "CNN"],
+      "status": "Completed",
+      "link":"https://docs.google.com/document/d/1kq-gdgZTJCHCBev5ezjR_ezx5OWKPHyU9E3iHWqujro/edit?usp=drive_link",
+      "aiHint": "infrared thermal imaging",
+      "overview": "InfraScan is a hands-on, AI-powered project that guides you through developing a real-time structural health monitoring system using infrared thermal imaging and deep learning. By combining MATLAB’s powerful image processing and neural network capabilities, you’ll build a complete solution to detect structural defects—like cracks and moisture—without requiring costly sensors or hardware access. By the end, you will have: Processed and analyzed infrared images using MATLAB. Built and trained convolutional neural networks (CNNs) to detect anomalies. Developed a real-time visualization interface for live defect detection. Gained practical experience in image preprocessing, model tuning, and deployment.",
+      "steps": [
+        "Established MATLAB development environment",
+        "Applied fundamental Image processing techniques",
+        "Implemented deep learning with CNNs",
+        "Collected and preprocessed Infrared datasets",
+        "Developed and trained CNN model for defect detection and evaluated its performance",
+        "Developed real-time monitoring interface",
+        "Documented and presented professionally (Canva and OBS Studio)"
+      ],
+      "mentors": ["Vikash Sunda (Y23)" , "Shauya Srivastava (Y23)","Kshitij Srivastava (Y23)","Mohit Meena (Y23)"]
+    },
+    {
+      "id": "blueprintx",
+      "title": "BluePrintX",
+      "description": "Designed to automate the transformation of hand-drawn floor plans into professional digital formats. Also developing a dedicated app to enhance accessibility and usability.",
+      "image": "/blueprint.png",
+      "tags": ["OpenCV", "Image processing", "PyTesseract", "Flutter"],
+      "status": "Completed",
+      "link":"https://docs.google.com/document/d/1FZOIlz9pE8XnDIDRyntsAbuiliw_xKdaHooE2YfGpAs/edit?usp=drive_link",
+      "aiHint": "floor plan digitization",
+      "overview": "This project guides you through building BlueprintX, an AI-powered system that digitizes hand-drawn floor plans into structured data. By combining computer vision with a modern user interface, you'll create a tool that can transform sketches into usable digital formats. This project is designed to be completed independently, leveraging powerful open-source libraries and cloud-based APIs. By the end, you will have: Built a robust image processing pipeline using OpenCV to detect and extract structural features like walls, doors, and windows from a drawing. Implemented an OCR (Optical Character Recognition) system with PyTesseract and Google Vision API to read annotations, such as room labels and dimensions. Developed a user-friendly interface with Flutter for uploading floor plans and visualizing the digitized results. Mastered the tools OpenCV, PyTesseract, and Flutter, gaining experience in image processing, AI-based text recognition, and cross-platform app development.",
+      "steps": [
+        "Established comprehensive development environment",
+        "Explored the basics and mastered image processing (OpenCV)",
+        "Implemented robust OCR pipeline (PyTesseract / Google Vision API)",
+        "Developed foundational Flutter UI and Back-end (Flutter and Flask / Django)",
+        "Integrated end-to-end processing and visualization",
+        "Enhanced functionality with export and UI polish",
+        "Documented and presented professionally (Canva and OBS Studio)"
+      ],
+      "mentors": ["Pushpender (Y23)", "Shashank Katiyar (Y23)", "Bhavnoor Singh (Y23)"]
+    },
+    {
+      "id": "metastructure",
+      "title": "MetaStructure",
+      "description": "Designed to create a detailed digital twin of any monument of your choice by Blender's 3D modeling. Build an accurate 3D model to capture the structure's intricate details, enhancing your understanding and paving the way for future innovations in digital modeling and engineering.",
+      "image": "/meta.png",
+      "tags": ["3D modeling", "Blender"],
+      "status": "Completed",
+      "link":"#",
+      "aiHint": "monument 3d model",
+      "overview": "This project guides you through building a detailed digital twin of any monument of your choice using Blender's 3D modeling capabilities. By leveraging advanced 3D modeling techniques, you'll create an accurate and intricate digital representation of a physical structure. This project is designed to be completed independently, focusing on mastering Blender and potentially integrating with external data sources for enhanced realism. By the end, you will have: Built a highly accurate 3D model of a chosen monument, capturing its intricate architectural details, textures, and spatial relationships. Mastered 3D modeling techniques within Blender, including hard-surface modeling, sculpting, UV unwrapping, texturing, and rendering, to achieve a high level of visual fidelity. Gained experience in creating digital twins, paving the way for future innovations in digital preservation, virtual tourism, architectural visualization, and engineering simulations.",
+      "steps": [
+        "Established 3D modeling development environment (Blender)",
+        "Explored the basics and mastered the 3D modelling fundamentals",
+        "Acquired core animation skills",
+        "Rendered the 3D animations as Videos",
+        "Documented and presented professionally (Canva and OBS Studio)"
+      ],
+      "mentors": ["VishnuPrasad R (Y23)", "Hemesh Saini (Y23)", "B Meghhanaa (Y23)"]
+    }
+]
