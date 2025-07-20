@@ -94,6 +94,9 @@ export default {
         'accordion-up': 'accordion-up 0.2s ease-out',
         'fade-in-up': 'fade-in-up 0.8s ease-out forwards',
       },
+       screens: {
+        'xs': {'max': '399px'}, // Custom screen for <400px
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],
