@@ -6,3 +6,4 @@
 /.env.production
 /.env.test
 /.env.development.local     
+/build
