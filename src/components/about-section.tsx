@@ -6,7 +6,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import { Card, CardContent, CardDescription, CardTitle } from "./ui/card"
-import Image from "next/image"
+import Image from "@/components/ui/image"
 import {
   DraftingCompass,
   Building,

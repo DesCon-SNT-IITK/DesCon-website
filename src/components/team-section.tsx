@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from '@/components/ui/image';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Linkedin, Mail, Phone, Instagram } from 'lucide-react';
@@ -25,7 +25,7 @@ const teamData = {
       }
     ],
     secretaries: [
-      { name: "Y Krishna Poojitha", role: "Secretary", avatar: "/krishna.jpg", aiHint: "indian woman portrait", description: "Not perfect, just original", socials: { linkedin: "#", mail: "mailto:ykrishnap24@iitk.ac.in", instagram: "https://www.instagram.com/ykpoojitha_1306", phone: "tel:+918074292557" } },
+      { name: "Y Krishna Poojitha", role: "Secretary", avatar: "/poojitha.jpg", aiHint: "indian woman portrait", description: "Not perfect, just original", socials: { linkedin: "#", mail: "mailto:ykrishnap24@iitk.ac.in", instagram: "https://www.instagram.com/ykpoojitha_1306", phone: "tel:+918074292557" } },
       { name: "Himanshu Kumar", role: "Secretary", avatar: "/himanshu.jpg", aiHint: "indian man portrait", description: "Hi! I’m Himanshu Kumar, a student of Civil Engineering at IIT Kanpur. I'm someone who thrives on curiosity and creativity — whether it’s through solving complex problems, exploring the world of design, or simply expressing myself through art.  I’m deeply passionate about anime, digital design, and the ever-evolving field of technology. Outside the classroom, you'll often find me drawing, building cool projects, or diving into new things to learn. I believe in lifelong growth and enjoy working on ideas that challenge my thinking and expand my skill set.  Originally from Prayagraj, Uttar Pradesh, I carry with me the values of resilience, open-mindedness, and a desire to contribute meaningfully to everything I do.", socials: { linkedin: "https://www.linkedin.com/in/himanshumini?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", mail: "mailto:krhimanshu24@iitk.ac.in", instagram: "https://www.instagram.com/himanshu_iitk?igsh=dm95eWFnczcxZHR6", phone: "tel:+919935186164" } },
       { name: "Harsh Gautam", role: "Secretary", avatar: "/harsh.jpg", aiHint: "indian man portrait", description: "I may be a bit lazy in doing work but when I do it then you will have no complaints.", socials: { linkedin: "https://www.linkedin.com/in/harsh-gautam-1a4b31279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", mail: "mailto:hgautam24@iitk.ac.in", instagram: "https://www.instagram.com/harshgautam2912?igsh=MTV2ZGh4N3p6Mm9lMg==", phone: "tel:+919520229165" } },
       { name: "Harshit Karnani", role: "Secretary", avatar: "/harshit.jpeg", aiHint: "indian man portrait", description: "I'm from Bangalore. My branch is MSE. I enjoy designing - whether it's basic poster making or 3D object modelling. I also love playing sports.", socials: { linkedin: "https://www.linkedin.com/in/harshit-karnani-555306372/", mail: "mailto:kharshit24@iitk.ac.in", instagram: "https://www.instagram.com/_h4rsh.t/", phone: "tel:+919448390641" } },
@@ -110,7 +110,7 @@ export default function TeamSection() {
                         <div key={index} className="flex flex-col items-center text-center group p-4 rounded-lg hover:bg-card/50 transition-all">
                           <Avatar className="w-32 h-32 mb-4 border-4 border-transparent group-hover:border-primary transition-all duration-300">
                             {member.avatar && <AvatarImage src={member.avatar} alt={member.name} data-ai-hint={member.aiHint}/>}
-                            <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                            <AvatarFallback>{member.name.split(' ').map((n: string) => n[0]).join('')}</AvatarFallback>
                           </Avatar>
                           <h3 className="text-xl font-bold font-headline">{member.name}</h3>
                           <p className="text-primary font-medium">{member.role}</p>
@@ -136,7 +136,7 @@ export default function TeamSection() {
                         <div key={index} className="flex flex-col items-center text-center group">
                           <Avatar className="w-24 h-24 mb-4 border-4 border-transparent group-hover:border-accent transition-all duration-300">
                             {member.avatar && <AvatarImage src={member.avatar} alt={member.name} data-ai-hint={member.aiHint}/>}
-                            <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                            <AvatarFallback>{member.name.split(' ').map((n: string) => n[0]).join('')}</AvatarFallback>
                           </Avatar>
                           <h3 className="text-lg font-bold font-headline">{member.name}</h3>
                           {member.socials && (

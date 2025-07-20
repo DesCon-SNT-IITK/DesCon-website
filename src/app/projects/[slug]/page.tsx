@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from '@/components/ui/image';
 import { notFound } from 'next/navigation';
 import projects from '@/data/projects.json';
 import { Badge } from '@/components/ui/badge';

@@ -1,6 +1,6 @@
 import { Button } from "./ui/button"
 import { Mail, Instagram, Linkedin, Facebook, Github } from "lucide-react"
-import Image from "next/image"
+import Image from "@/components/ui/image"
 
 const socialLinks = [
   { icon: <Instagram className="h-6 w-6" />, name: "Instagram", href: "https://www.instagram.com/desconiitk/" },

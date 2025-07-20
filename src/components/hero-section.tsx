@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button'
 import Logo from '@/components/logo'
-import Image from 'next/image'
+import Image from '@/components/ui/image'
 import { cn } from '@/lib/utils'
 
 const heroImages = [

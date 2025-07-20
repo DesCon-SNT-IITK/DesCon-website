@@ -9,7 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-import Image from "next/image"
+import Image from "@/components/ui/image"
 import { Button } from "./ui/button"
 import Link from "next/link"
 
