@@ -19,7 +19,7 @@ const teamData = {
         name: "Vikash Sunda",
         role: "Leader",
         description: "A visionary leader with a focus on blending aesthetics with functionality.",
-        avatar: "/vikash.jpg",
+        avatar: "/vikash.png",
         aiHint: "indian man portrait",
         socials: { linkedin: "https://www.linkedin.com/in/vikash-sunda-34245a2b4/", mail: "mailto:vikashs23@iitk.ac.in", instagram: "https://www.instagram.com/vikash_sunda__06?igsh=ODJyYmQxbTZ0YnJ5", phone: "tel:+916376327908" }
       }
