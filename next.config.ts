@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
+    unoptimized: true, // Required for static export
     remotePatterns: [
       {
         protocol: 'https',
@@ -18,6 +19,10 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  output: 'export',
+  distDir: 'build',
+  trailingSlash: true, // Recommended for static export
+  assetPrefix: '.', // Required for static export
 };
 
 export default nextConfig;

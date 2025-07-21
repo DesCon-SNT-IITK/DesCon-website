@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "desconiitk"
+  },
+  "targets": {
+    "desconiitk": {
+      "hosting": {
+        "DesConIITK": [
+          "desconiitk"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

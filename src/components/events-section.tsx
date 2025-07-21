@@ -1,5 +1,7 @@
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "./ui/card"
-import { Calendar, Users, Mic } from "lucide-react"
+
+import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "./ui/card"
+import { Calendar, Users, Mic, Link as LinkIcon } from "lucide-react"
+import { BookOpen, Brain, Award } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -7,64 +9,84 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-import Image from "next/image"
+import Image from "@/components/ui/image"
+import { Button } from "./ui/button"
+import Link from "next/link"
 
 const highlights = [
   {
-    title: "Annual Bridge Design Competition",
-    description: "Our flagship event testing the limits of structural engineering and design.",
-    image: "https://placehold.co/600x400.png",
-    aiHint: "bridge competition"
+    title: "Project: TwinKampus",
+    description: "Built a digital twin of the IIT Kanpur campus using interactive, simplified 3D models to enable virtual exploration.",
+    image: "/twinkampus.png",
+    aiHint: "digital twin campus",
+    resources: [
+      { name: "Read Roadmap", href: "https://docs.google.com/document/d/1yKe-Uwmc1ziIZW2X9Kwi8swJu8jjHxMmWwn7zBYOjvY/edit?usp=sharing" },
+    ]
   },
   {
-    title: "Workshop on Sustainable Architecture",
-    description: "Exploring green building materials and eco-friendly construction techniques.",
-    image: "https://placehold.co/600x400.png",
-    aiHint: "sustainable architecture"
+    title: "Project: BluePrintX",
+    description: "Converted hand-drawn floor plans into professional digital versions through automation, along with a dedicated app.",
+    image: "/blueprint.png",
+    aiHint: "floor plan automation",
+    resources: [
+      { name: "Read Roadmap", href: "https://docs.google.com/document/d/1FZOIlz9pE8XnDIDRyntsAbuiliw_xKdaHooE2YfGpAs/edit?usp=sharing" },
+    ]
   },
   {
-    title: "Guest Lecture: Modern Construction Tech",
-    description: "Industry expert talk on the latest trends and technologies shaping the construction world.",
-    image: "https://placehold.co/600x400.png",
-    aiHint: "construction lecture"
+    title: "Project: InfraScan",
+    description: "Created an AI-powered structural health monitoring system using infrared imaging and MATLAB to detect structural defects in real-time.",
+    image: "/infra.png",
+    aiHint: "infrared structural health monitoring",
+    resources: [
+      { name: "Read Roadmap", href: "https://docs.google.com/document/d/1kq-gdgZTJCHCBev5ezjR_ezx5OWKPHyU9E3iHWqujro/edit?usp=sharing" },
+    ]
   },
   {
-    title: "Workshop: Introduction to AutoCAD",
-    description: "A hands-on session for beginners to learn the fundamentals of computer-aided design with AutoCAD.",
-    image: "https://placehold.co/600x400.png",
-    aiHint: "autocad workshop"
-  },
+    title: "Project: MetaStructure",
+    description: "Designed a detailed digital model of a heritage monument using Blender to improve digital modeling skills and capture architectural intricacy.",
+    image: "/meta.png",
+    aiHint: "heritage monument modeling",
+    resources: [
+      { name: "Read RoadMap", href: "#" },
+    ]
+  }
 ]
 
 
 const events = [
   {
-    date: "October 14, 2024",
-    title: "Annual General Meeting",
-    description: "Kickstarting the new academic year with an overview of our plans, projects, and an open forum for new ideas.",
+    date: "July 26-28, 2024",
+    title: "SnT Pavilion",
+    description: "A dynamic event featuring all the major tech and innovation-focused clubs of the college. If you're looking to learn, build, and belong — the Science and Technology Pavilion is where your journey begins!",
     icon: <Users className="h-8 w-8 text-primary" />,
     status: "Upcoming",
+    resources: [],
   },
   {
-    date: "September 5, 2024",
-    title: "Workshop: Introduction to AutoCAD",
-    description: "A hands-on session for beginners to learn the fundamentals of computer-aided design with AutoCAD.",
-    icon: <Mic className="h-8 w-8 text-primary" />,
-    status: "Upcoming",
-  },
-  {
-    date: "April 22, 2024",
-    title: "DesCon Project Expo",
-    description: "Showcasing the innovative projects completed by our members throughout the semester.",
-    icon: <Calendar className="h-8 w-8 text-primary" />,
+    date: "Summer 2024",
+    title: "Summer Project Mentee Recruitment",
+    description: "A mentor-guided summer program for hands-on experience in real-world projects, requiring only enthusiasm and a weekly commitment of 8–10 hours.",
+    icon: <Brain className="h-8 w-8 text-primary" />,
     status: "Past",
+    resources: [
+      { name: "Instagram Post", href: "https://www.instagram.com/p/DIJZRGKT87k/?igsh=MXd5cGFyMjdvc293NA==" }
+    ],
   },
   {
-    date: "March 15, 2024",
-    title: "Guest Lecture: Modern Construction Tech",
-    description: "Industry expert talk on the latest trends and technologies shaping the construction world.",
-    icon: <Mic className="h-8 w-8 text-primary" />,
+    date: "Summer 2024",
+    title: "Secretary Recruitment",
+    description: "Multi-step selection process for the post of Secretary at DesCon Society, testing technical skills, design thinking, and leadership through various tasks.",
+    icon: <Users className="h-8 w-8 text-primary" />,
     status: "Past",
+    resources: [],
+  },
+  {
+    date: "March 2024",
+    title: "Techkriti Bridge Design Competition",
+    description: "Our team secured 3rd place in Techkriti's Bridge Design Challenge by crafting a miniature truss bridge that held up to 70 kgs.",
+    icon: <Award className="h-8 w-8 text-primary" />,
+    status: "Past",
+    resources: [],
   },
 ]
 
@@ -98,9 +120,23 @@ export default function EventsSection() {
                           <div className="relative h-56 w-full">
                              <Image src={highlight.image} alt={highlight.title} fill className="object-cover transition-transform duration-300 group-hover:scale-105" data-ai-hint={highlight.aiHint} />
                           </div>
-                          <div className="p-6 flex-grow">
-                            <CardTitle className="font-headline text-xl mb-2">{highlight.title}</CardTitle>
-                            <CardDescription>{highlight.description}</CardDescription>
+                          <div className="p-6 flex-grow flex flex-col">
+                            <div className="flex-grow">
+                                <CardTitle className="font-headline text-xl mb-2">{highlight.title}</CardTitle>
+                                <CardDescription>{highlight.description}</CardDescription>
+                            </div>
+                            {highlight.resources && highlight.resources.length > 0 && (
+                              <div className="mt-4 flex flex-wrap gap-2">
+                                {highlight.resources.map((resource) => (
+                                  <Button key={resource.name} variant="outline" size="sm" asChild>
+                                    <Link href={resource.href}>
+                                      <LinkIcon className="mr-2 h-4 w-4" />
+                                      {resource.name}
+                                    </Link>
+                                  </Button>
+                                ))}
+                              </div>
+                            )}
                           </div>
                         </CardContent>
                       </Card>
@@ -140,6 +176,18 @@ export default function EventsSection() {
                       </CardHeader>
                       <CardContent>
                         <p>{event.description}</p>
+                         {event.resources && event.resources.length > 0 && (
+                          <div className="mt-4 flex flex-wrap gap-2">
+                            {event.resources.map((resource) => (
+                              <Button key={resource.name} variant="outline" size="sm" asChild>
+                                <Link href={resource.href}>
+                                  <LinkIcon className="mr-2 h-4 w-4" />
+                                  {resource.name}
+                                </Link>
+                              </Button>
+                            ))}
+                          </div>
+                        )}
                       </CardContent>
                     </Card>
                   </div>

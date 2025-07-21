@@ -1,20 +1,22 @@
 import { Button } from "./ui/button"
-import { Mail, Instagram, Linkedin, Facebook } from "lucide-react"
-import Image from "next/image"
+import { Mail, Instagram, Linkedin, Facebook, Github } from "lucide-react"
+import Image from "@/components/ui/image"
 
 const socialLinks = [
-  { icon: <Instagram className="h-6 w-6" />, name: "Instagram", href: "#" },
-  { icon: <Linkedin className="h-6 w-6" />, name: "LinkedIn", href: "#" },
-  { icon: <Facebook className="h-6 w-6" />, name: "Facebook", href: "#" },
+  { icon: <Instagram className="h-6 w-6" />, name: "Instagram", href: "https://www.instagram.com/desconiitk/" },
+  { icon: <Linkedin className="h-6 w-6" />, name: "LinkedIn", href: "https://www.linkedin.com/company/descon-society-iit-kanpur/posts/?feedView=all" },
+  { icon: <Facebook className="h-6 w-6" />, name: "Facebook", href: "https://www.facebook.com/DesConIITK/" },
+  { name: "Github", href: 'https://github.com/DesCon-SNT-IITK', icon: <Github className="h-5 w-5" /> },
+
 ]
 
 const instagramPosts = [
-  { src: "https://placehold.co/400x400.png", alt: "Instagram Post 1", aiHint: "construction site" },
-  { src: "https://placehold.co/400x400.png", alt: "Instagram Post 2", aiHint: "architectural sketch" },
-  { src: "https://placehold.co/400x400.png", alt: "Instagram Post 3", aiHint: "team meeting" },
-  { src: "https://placehold.co/400x400.png", alt: "Instagram Post 4", aiHint: "3d model" },
-  { src: "https://placehold.co/400x400.png", alt: "Instagram Post 5", aiHint: "bridge structure" },
-  { src: "https://placehold.co/400x400.png", alt: "Instagram Post 6", aiHint: "campus building" },
+  { src: "/contact1.jpeg", alt: "Instagram Post 1", aiHint: "construction site" },
+  { src: "/contact2.jpeg", alt: "Instagram Post 2", aiHint: "architectural sketch" },
+  { src: "/contact3.jpeg", alt: "Instagram Post 3", aiHint: "team meeting" },
+  { src: "/contact4.webp", alt: "Instagram Post 4", aiHint: "3d model" },
+  { src: "/contact5.webp", alt: "Instagram Post 5", aiHint: "bridge structure" },
+  { src: "/contact6.webp", alt: "Instagram Post 6", aiHint: "campus building" },
 ]
 
 export default function ContactSection() {
@@ -29,9 +31,9 @@ export default function ContactSection() {
             Have a question, a project idea, or want to join our team? We'd love to hear from you. Reach out to us via email or connect with us on social media.
           </p>
           <div className="space-y-4">
-            <a href="mailto:descon.iitk@gmail.com" className="flex items-center gap-4 group text-lg">
+            <a href="mailto:desconsntiitk@gmail.com" className="flex items-center gap-4 group text-lg">
               <Mail className="h-6 w-6 text-primary" />
-              <span className="group-hover:text-primary transition-colors">descon.iitk@gmail.com</span>
+              <span className="group-hover:text-primary transition-colors">desconsntiitk@gmail.com</span>
             </a>
             <div className="flex items-center gap-4 pt-4">
               {socialLinks.map((social) => (
@@ -56,7 +58,7 @@ export default function ContactSection() {
             ))}
           </div>
            <Button variant="outline" className="w-full" asChild>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/desconiitk/" target="_blank" rel="noopener noreferrer">
               <Instagram className="mr-2 h-4 w-4" />
               Follow on Instagram
             </a>

@@ -9,11 +9,11 @@ import { cn } from '@/lib/utils'
 import Logo from '@/components/logo'
 
 const navLinks = [
-  { name: 'About', href: '#about' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Team', href: '#team' },
-  { name: 'Events', href: '#events' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'About', href: '/#about' },
+  { name: 'Projects', href: '/#projects' },
+  { name: 'Team', href: '/#team' },
+  { name: 'Events', href: '/#events' },
+  { name: 'Contact', href: '/#contact' },
 ]
 
 export default function Header() {
@@ -25,19 +25,32 @@ export default function Header() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10)
       
-      const sections = navLinks.map(link => document.querySelector(link.href));
-      let currentSection = '';
-      sections.forEach(section => {
+      const sections = navLinks.map(link => document.querySelector(link.href.substring(2))); // remove leading /#
+      let currentSectionId = '';
+      for (const section of sections) {
         if (section && window.scrollY >= (section as HTMLElement).offsetTop - 100) {
-          currentSection = `#${section.id}`;
+          currentSectionId = section.id;
         }
-      });
-      setActiveLink(currentSection);
+      }
+      
+      const currentLink = navLinks.find(link => link.href.substring(2) === currentSectionId);
+      if (currentLink) {
+        setActiveLink(currentLink.href);
+      } else {
+        setActiveLink('');
+      }
     }
     window.addEventListener('scroll', handleScroll)
     handleScroll(); // Set active link on initial load
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  const getActiveLink = (href: string) => {
+      if (typeof window !== 'undefined' && window.location.pathname !== '/') {
+          return false;
+      }
+      return activeLink === href;
+  }
 
   return (
     <header
@@ -48,8 +61,8 @@ export default function Header() {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex h-16 items-center justify-between">
-          <Link href="#home" className="flex items-center gap-2">
-            <Logo className="h-8 w-8 text-primary" />
+          <Link href="/#home" className="flex items-center gap-2">
+          <Logo width={42} height={42} />
             <span className="font-bold text-lg font-headline hidden sm:inline text-foreground">
               DesCon IITK
             </span>
@@ -62,7 +75,7 @@ export default function Header() {
                 href={link.href}
                 className={cn(
                   "text-sm font-medium transition-colors",
-                   activeLink === link.href 
+                   getActiveLink(link.href) 
                      ? 'text-primary'
                      : 'text-foreground/80 hover:text-primary'
                 )}
@@ -83,7 +96,7 @@ export default function Header() {
               <SheetContent side="right" className="w-[280px] bg-card/95 text-foreground">
                 <div className="flex flex-col h-full">
                   <div className="flex items-center justify-between p-4 border-b border-border">
-                     <Link href="#home" className="flex items-center gap-2" onClick={() => setOpen(false)}>
+                     <Link href="/#home" className="flex items-center gap-2" onClick={() => setOpen(false)}>
                         <Logo className="h-8 w-8 text-primary" />
                         <span className="font-bold text-lg font-headline">DesCon IITK</span>
                      </Link>
@@ -101,7 +114,7 @@ export default function Header() {
                           href={link.href}
                           className={cn(
                             "text-lg font-medium transition-colors py-2",
-                             activeLink === link.href ? 'text-primary' : 'hover:text-primary'
+                             getActiveLink(link.href) ? 'text-primary' : 'hover:text-primary'
                           )}
                         >
                           {link.name}
