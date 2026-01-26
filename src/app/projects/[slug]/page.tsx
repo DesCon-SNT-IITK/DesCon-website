@@ -18,8 +18,9 @@ function getProjectData(slug: string) {
 
 type Project = ReturnType<typeof getProjectData>;
 
-export default async function ProjectPage({ params }: { params: { slug: string } }) {
-  const project = getProjectData(params.slug) as Project;
+export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const project = getProjectData(slug) as Project;
 
   if (!project) {
     notFound();
@@ -64,63 +65,84 @@ export default async function ProjectPage({ params }: { params: { slug: string }
         <div className="md:col-span-2 space-y-8">
           <AnimatedSection id="project-overview">
             <div className="p-6 rounded-lg bg-card/50">
-                <h2 className="text-2xl md:text-3xl font-bold font-headline mb-4">Project Overview</h2>
-                <p className="text-lg text-muted-foreground leading-relaxed">
+              <h2 className="text-2xl md:text-3xl font-bold font-headline mb-4">Project Overview</h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
                 {project.overview}
-                </p>
+              </p>
             </div>
           </AnimatedSection>
 
           <AnimatedSection id="project-steps">
-             <div className="p-6 rounded-lg bg-card/50">
-                <h2 className="text-2xl md:text-3xl font-bold font-headline mb-6">Project Steps</h2>
-                <ul className="space-y-4">
+            <div className="p-6 rounded-lg bg-card/50">
+              <h2 className="text-2xl md:text-3xl font-bold font-headline mb-6">Project Steps</h2>
+              <ul className="space-y-4">
                 {project.steps.map((step, index) => (
-                    <li key={index} className="flex items-start gap-4">
+                  <li key={index} className="flex items-start gap-4">
                     <CheckCircle className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
                     <span className="text-muted-foreground">{step}</span>
-                    </li>
+                  </li>
                 ))}
-                </ul>
+              </ul>
             </div>
           </AnimatedSection>
         </div>
 
         <div className="space-y-8">
-            <AnimatedSection id="project-info">
-                 <div className="p-6 rounded-lg bg-card/50">
-                    <h3 className="text-xl font-bold font-headline mb-4">Project Details</h3>
-                    <div className="space-y-3 text-muted-foreground">
-                        <div className="flex justify-between">
-                            <strong>Status:</strong>
-                            <span>{project.status}</span>
-                        </div>
-                         <div className="flex justify-between">
-                            <strong>Category:</strong>
-                            <span>{project.tags[0]}</span>
-                        </div>
-                        <div className="flex justify-between">
-                            <strong>Resources:</strong>
-                            <span> <a href={project.link}>Click Here</a> </span>
-                        </div>
-                    </div>
+          <AnimatedSection id="project-info">
+            <div className="p-6 rounded-lg bg-card/50">
+              <h3 className="text-xl font-bold font-headline mb-4">Project Details</h3>
+              <div className="space-y-3 text-muted-foreground">
+                <div className="flex justify-between">
+                  <strong>Status:</strong>
+                  <span>{project.status}</span>
                 </div>
+                <div className="flex justify-between">
+                  <strong>Category:</strong>
+                  <span>{project.tags[0]}</span>
+                </div>
+                <div className="flex justify-between">
+                  <strong>Resources:</strong>
+                  <span> <a href={project.link}>Click Here</a> </span>
+                </div>
+                {project.hostedLink && (
+                  <div className="flex justify-between">
+                    <strong>Hosted Here:</strong>
+                    <span>
+                      <a href={project.hostedLink} target="_blank" rel="noopener noreferrer">
+                        Click Here
+                      </a>
+                    </span>
+                  </div>
+                )}
+                {/* {project.id === "blueprintx" && (
+                  <div className="flex justify-between mt-2">
+                    <strong>Download File:</strong>
+                    <span>
+                      <a href="/blueprintx.apk" download>
+                        Download Here
+                      </a>
+                    </span>
+                  </div>
+                )} */}
+
+              </div>
+            </div>
+          </AnimatedSection>
+          {project.mentors && project.mentors.length > 0 && (
+            <AnimatedSection id="project-mentors">
+              <div className="p-6 rounded-lg bg-card/50">
+                <h3 className="text-xl font-bold font-headline mb-4">Mentors</h3>
+                <ul className="space-y-3">
+                  {project.mentors.map((mentor, index) => (
+                    <li key={index} className="flex items-center gap-3 text-muted-foreground">
+                      <Users className="h-5 w-5 text-primary" />
+                      <span>{mentor}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </AnimatedSection>
-            {project.mentors && project.mentors.length > 0 && (
-                <AnimatedSection id="project-mentors">
-                    <div className="p-6 rounded-lg bg-card/50">
-                        <h3 className="text-xl font-bold font-headline mb-4">Mentors</h3>
-                        <ul className="space-y-3">
-                            {project.mentors.map((mentor, index) => (
-                                <li key={index} className="flex items-center gap-3 text-muted-foreground">
-                                    <Users className="h-5 w-5 text-primary" />
-                                    <span>{mentor}</span>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                </AnimatedSection>
-            )}
+          )}
         </div>
       </div>
     </div>

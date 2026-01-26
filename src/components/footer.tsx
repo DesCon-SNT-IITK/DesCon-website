@@ -3,7 +3,9 @@ import { Instagram, Linkedin, Facebook, Twitter, Mail } from 'lucide-react';
 
 const navLinks = [
   { name: 'About', href: '/#about' },
-  { name: 'Projects', href: '/#projects' },
+//   { name: 'Projects', href: '/#projects' },
+  { name: 'All Projects', href: '/projects' },
+  { name: 'Workshops and Competetion', href: '/workshops' },
   { name: 'Team', href: '/#team' },
   { name: 'Events', href: '/#events' },
   { name: 'Contact', href: '/#contact' },
