@@ -10,7 +10,9 @@ import Logo from '@/components/logo'
 
 const navLinks = [
   { name: 'About', href: '/#about' },
-  { name: 'Projects', href: '/#projects' },
+  { name: 'Projects', href: '/projects' },
+  // { name: 'All Projects', href: '/projects' },
+  { name: 'Workshops and Competetion', href: '/workshops' },
   { name: 'Team', href: '/#team' },
   { name: 'Events', href: '/#events' },
   { name: 'Contact', href: '/#contact' },
@@ -25,7 +27,8 @@ export default function Header() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10)
       
-      const sections = navLinks.map(link => document.querySelector(link.href.substring(2))); // remove leading /#
+      const sectionLinks = navLinks.filter((l) => l.href.startsWith('/#'));
+      const sections = sectionLinks.map(link => document.querySelector(link.href.substring(2))); // remove leading /#
       let currentSectionId = '';
       for (const section of sections) {
         if (section && window.scrollY >= (section as HTMLElement).offsetTop - 100) {
@@ -33,7 +36,7 @@ export default function Header() {
         }
       }
       
-      const currentLink = navLinks.find(link => link.href.substring(2) === currentSectionId);
+      const currentLink = sectionLinks.find(link => link.href.substring(2) === currentSectionId);
       if (currentLink) {
         setActiveLink(currentLink.href);
       } else {

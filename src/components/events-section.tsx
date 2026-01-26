@@ -198,6 +198,14 @@ export default function EventsSection() {
             ))}
           </div>
         </div>
+
+        <div className="text-center mt-16">
+          <Button asChild variant="outline">
+            <Link href="/workshops">
+              View All Workshops
+            </Link>
+          </Button>
+        </div>
       </div>
     </section>
   )

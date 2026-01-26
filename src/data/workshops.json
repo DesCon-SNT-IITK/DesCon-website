@@ -1,0 +1,60 @@
+[
+  {
+  "id": "autocad-101-descon",
+  "title": "Idea → Reality: AutoCAD 101",
+  "description": "Beginner-friendly hands-on workshop introducing 2D drafting and basic 3D modelling using AutoCAD.",
+  "image": "/autodesk101.png",
+  "tags": ["AutoCAD", "CAD", "Design", "3D Modelling"],
+  "status": "Past",
+  "date": "Jan 2026",
+  "duration": "2.5-hour workshop",
+  "mode": "In-person · Campus",
+  "aiHint": "autocad interface drafting",
+  "overview": "An introductory workshop designed to help students understand how real-world designs begin as digital drawings. Participants explored AutoCAD’s interface, practiced essential 2D tools, and took their first steps into basic 3D modelling.",
+  "agenda": [
+    "AutoCAD interface and navigation",
+    "Core 2D drawing and modify tools",
+    "Text, dimensions, and best practices",
+    "Introduction to 3D modelling tools"
+    ],
+  "takeaways": [
+    "Confidence using AutoCAD for academic work",
+    "Foundation in 2D drafting workflows",
+    "Understanding of basic 3D modelling concepts"
+    ],
+  "resources": [
+    { "label": "Workshop Slides", "href": "https://drive.google.com/file/d/1m1gLfhJyABfe1rbR3TVR4m-Cgp-wKBtS/view?usp=sharing" }
+    ],
+  "mentors": ["DesCon Core Team"]
+},
+{
+  "id": "model-mania-descon",
+  "title": "Model Mania",
+  "description": "A 3D character modelling competition encouraging creativity with no theme or limits.",
+  "image": "/modelmania.png",
+  "tags": ["3D Modelling", "Character Design", "Blender", "Fusion 360"],
+  "status": "Ongoing",
+  "date": "Jan 2026",
+  "duration": "Submission-based competition",
+  "mode": "Online Submission",
+  "aiHint": "3d character modeling competition",
+  "overview": "Model Mania is a 3D character modelling competition by DesCon Society where participants bring characters to life using Blender, Fusion 360, or any 3D software of their choice. Participants can design an original character or recreate a favorite fictional icon, with complete creative freedom and no predefined theme.",
+  "agenda": [
+    "Character ideation and concept selection",
+    "3D modelling using preferred software",
+    "Detailing, texturing, and rendering",
+    "Final submission for evaluation"
+  ],
+  "takeaways": [
+    "Hands-on experience in 3D character modelling",
+    "Certificates and recognition",
+    "Opportunity to win exciting prizes"
+  ],
+  "resources": [
+    { "label": "Registration Link", "href": "https://forms.gle/X1i1zssQ933Hw8Hz5" },
+    { "label": "Problem statement Link", "href": "https://docs.google.com/document/d/1UONYWjDKkw9JuYt1HQf_eaO7_vVEQ6Ol8TjhF2op0vE/edit?usp=sharing" }
+  ],
+  "mentors": ["DesCon Society"]
+}
+
+]
