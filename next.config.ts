@@ -23,10 +23,6 @@ const nextConfig: NextConfig = {
   output: 'export',
   distDir: 'build',
   trailingSlash: true, // Recommended for static export
-
-  // In production export we want relative assets (works on GitHub Pages/subpaths),
-  // but in dev this breaks because requests become /route/_next/... and 404.
-  assetPrefix: process.env.NODE_ENV === 'production' ? '.' : '',
 };
 
 export default nextConfig;
