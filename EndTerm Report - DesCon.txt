@@ -1,0 +1,73 @@
+﻿INDIAN INSTITUTE OF TECHNOLOGY, KANPUR Image result for iitk logo  Image result for snt iitk 
+
+
+STUDENTS’ GYMKHANA
+SCIENCE AND TECHNOLOGY COUNCIL
+________________
+
+
+
+
+Design and Construction Society
+1. Introduction
+DesCon Society functioned throughout the academic year with the objective of promoting applied learning in design, construction, infrastructure, and computational modeling. The society focused on hands-on projects, skill-development workshops, creative competitions, campus-centric studies, and collaborative outreach, enabling students to translate theoretical knowledge into practical applications.
+2. Summer Term Activities
+2.1 Launch of Summer Projects
+At the beginning of the summer term, DesCon Society launched four comprehensive summer projects—Twinkampus, BlueprintX, InfraScan, and MetaStructure. These projects were designed to provide students with hands-on exposure to real-world challenges in campus planning, digital design, infrastructure analysis, and AI-driven systems. The projects emphasized interdisciplinary collaboration, problem-solving, and application-oriented learning
+2.2 Summer Project Descriptions
+Twinkampus – The Campus Twin
+Twinkampus focused on creating a digital twin of the IIT Kanpur campus. Students developed simplified yet realistic 3D models of campus buildings using AutoCAD and integrated them into an interactive web platform using React.js and Three.js. The project introduced participants to campus-scale planning, 2D/3D modeling, and web-based visualization, culminating in an interactive virtual campus experience.
+BlueprintX – AI-Powered Floor Plan Digitization
+BlueprintX aimed to automate the transformation of hand-drawn floor plans into professional digital formats. Participants worked with image processing using OpenCV, OCR-based text recognition, and API-driven pipelines to detect structural elements and annotations. The final system enabled export of digitized floor plans in SVG, DXF, and PNG formats, bridging the gap between manual drafting and digital workflows.
+InfraScan – AI-Powered Structural Health Monitoring
+InfraScan focused on developing an AI-driven structural health monitoring system using infrared imaging and deep learning techniques implemented in MATLAB. Students worked on dataset collection, image preprocessing, CNN-based model training, and evaluation, resulting in a prototype capable of detecting cracks and moisture-related anomalies in structures.
+MetaStructure – Digital Twin of a Monument
+MetaStructure centered on creating a detailed digital twin of a monument using Blender. The project trained students in 3D modeling, texturing, modifiers, lighting, and rendering workflows, with emphasis on geometric accuracy and realistic visualization. Each participant produced a fully rendered 3D model as the final deliverable.
+2.3 Launch of the DesCon Website
+During the summer term, DesCon Society successfully launched its official website to establish a centralized and professional digital presence. The website showcases ongoing and past projects, events, resources, and participation opportunities, significantly improving outreach and communication while strengthening DesCon’s identity as a structured technical society.
+2.4 Training Workshop for Secretaries
+A training workshop for secretaries was planned during the summer term with the objective of strengthening organizational efficiency. The workshop aims to equip incoming secretaries with skills related to project management, coordination, documentation, communication, and tool usage, ensuring smoother transitions and continuity across terms.
+3. Post-Summer[a]
+3.1 Extension of Twinkampus[b][c][d]
+Based on its strong impact and long-term relevance, Twinkampus was extended beyond the summer term as a initiative. The extended phase focuses on systematically mapping buildings, open spaces, pathways, and infrastructure elements to develop a comprehensive and scalable campus model. This extension ensures continuity in learning and transforms the project into a long-term academic and planning asset for the campus.
+4. Winter Term Activities
+4.1 AutoCAD Basics Workshop (15 January)
+DesCon Society conducted a hands-on workshop on AutoCAD Basics to introduce students to fundamental 2D drafting and modeling concepts. The session focused on essential tools, workflows, and practical applications relevant to design and construction projects.
+Number of participants: 25 students
+4.2 Model Mania – Character to Life Competition (14–20 January)
+Model Mania was a week-long modeling competition where participants were challenged to bring characters to life using Blender or other 3D modeling software. The competition encouraged creativity, technical proficiency, and originality in digital design.
+Number of submissions received: 15
+4.3 MATLAB Workshop (24 January)
+A MATLAB workshop was conducted to familiarize students with basic scripting, data handling, and visualization techniques. The session supported participants involved in analytical and AI-driven projects, particularly those related to computational modeling and infrastructure analysis.
+Number of participants: 45 students
+4.4 Launch of the “MasterPlanned” Series (29 January)
+DesCon Society initiated the MasterPlanned series, an educational content initiative focused on exploring the architecture, planning principles, and structural philosophy of cities. The series dives deep into urban layouts and architectural evolution, expanding learning beyond structured project work.
+4.5 Collaboration with Spark IIT Kanpur
+In collaboration with Spark IIT Kanpur, DesCon launched a joint series of posts uncovering architectural changes and stories behind the buildings of the IIT Kanpur campus. This initiative combined technical insights with historical context, strengthening inter-society engagement and student outreach.
+4.6 Blender Workshop (14 February)
+A Blender workshop was conducted to introduce students to 3D modeling, texturing, and rendering workflows. The session complemented DesCon’s modeling-focused projects and competitions by providing practical exposure to industry-relevant visualization tools.
+Number of participants: 25 students
+5. Winter Projects
+During the winter term, DesCon Society launched four interdisciplinary projects: SMARTPATH: AI Traffic Routing, Sustainable Building, Design Optimization Using Images and Machine Learning, and IITK-EcoConstruct. These projects emphasized real-world impact and technological integration, encouraging students to apply AI, machine learning, sustainability frameworks, and data-driven analysis to campus-centric and societal challenges.[e]
+6. Planned and Upcoming Initiatives
+6.1 Ideal Room Layout Design Competition
+DesCon plans to organize a design competition focused on planning the layout of an ideal room. Participants will apply principles of spatial planning, ergonomics, functionality, and aesthetics using drafting or modeling tools, promoting creativity and practical design thinking.
+6.2 Preparation for Techkriti Competitions
+DesCon Society is actively preparing its members for participation in competitions conducted under Techkriti by strengthening relevant technical and design skills through workshops, practice exercises, and internal challenges.
+* AutoCAD Design Challenge:
+ Preparation for this challenge focuses on developing innovative and unconventional design ideas while ensuring technical accuracy and clarity in drafting. Members are being encouraged to explore creative solutions using AutoCAD, with an emphasis on design intent, visualization, and professional presentation. Internal discussions and practice exercises aim to align participants with industry-level evaluation standards.
+
+* Bridge Design Challenge:
+ For the bridge design challenge, DesCon members are preparing by revisiting fundamental concepts of truss design, load distribution, and structural efficiency. Emphasis is being placed on hands-on experimentation, optimization strategies, and material-efficient design to build a popsicle-stick truss bridge capable of bearing maximum load. This preparation aims to strengthen practical engineering skills ahead of the competition.
+7. Conclusion
+Throughout the academic year, DesCon Society demonstrated steady growth through impactful projects, skill-building workshops, creative competitions, campus engagement initiatives, and collaborations. By maintaining a strong focus on applied learning and real-world relevance, DesCon continues to contribute meaningfully to student development under the Science and Technology Council at IIT Kanpur.
+Tanush Goel
+General Secretary, Science and Technology
+Students’ Gymkhana, IIT Kanpur
+sntsecy@iitk.ac.in | tanushg22@iitk.ac.in 
++91-7303284540
+[a]add that had launched a series of post to explore campus diversity
+[b]isse pehle pavallion and taneek ka daalna h
+[c]_Marked as resolved_
+[d]_Re-opened_
+[e]write in one two line description of projects as well
