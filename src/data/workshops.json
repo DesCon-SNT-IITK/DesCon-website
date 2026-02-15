@@ -1,60 +1,187 @@
 [
   {
-  "id": "autocad-101-descon",
-  "title": "Idea → Reality: AutoCAD 101",
-  "description": "Beginner-friendly hands-on workshop introducing 2D drafting and basic 3D modelling using AutoCAD.",
-  "image": "/autodesk101.png",
-  "tags": ["AutoCAD", "CAD", "Design", "3D Modelling"],
-  "status": "Past",
-  "date": "Jan 2026",
-  "duration": "2.5-hour workshop",
-  "mode": "In-person · Campus",
-  "aiHint": "autocad interface drafting",
-  "overview": "An introductory workshop designed to help students understand how real-world designs begin as digital drawings. Participants explored AutoCAD’s interface, practiced essential 2D tools, and took their first steps into basic 3D modelling.",
-  "agenda": [
-    "AutoCAD interface and navigation",
-    "Core 2D drawing and modify tools",
-    "Text, dimensions, and best practices",
-    "Introduction to 3D modelling tools"
+    "id": "ideal-room-layout-competition",
+    "title": "Ideal Room Layout Design Competition",
+    "description": "A design competition focused on planning the layout of an ideal room using spatial planning and aesthetics.",
+    "image": "/room-layout.png",
+    "tags": [
+      "Interior Design",
+      "Spatial Planning",
+      "AutoCAD",
+      "Architecture"
     ],
-  "takeaways": [
-    "Confidence using AutoCAD for academic work",
-    "Foundation in 2D drafting workflows",
-    "Understanding of basic 3D modelling concepts"
+    "status": "Upcoming",
+    "date": "Upcoming",
+    "duration": "Design challenge",
+    "mode": "Competition",
+    "aiHint": "room layout plan design",
+    "overview": "DesCon plans to organize a design competition focused on planning the layout of an ideal room. Participants will apply principles of spatial planning, ergonomics, functionality, and aesthetics using drafting or modeling tools, promoting creativity and practical design thinking.",
+    "agenda": [
+      "Conceptualizing room requirements",
+      "Drafting layout using CAD or modeling tools",
+      "Ensuring ergonomic and functional design",
+      "Final submission of layout and renderings"
     ],
-  "resources": [
-    { "label": "Workshop Slides", "href": "https://drive.google.com/file/d/1m1gLfhJyABfe1rbR3TVR4m-Cgp-wKBtS/view?usp=sharing" }
+    "takeaways": [
+      "Practical design thinking experience",
+      "Understanding of spatial planning principles",
+      "Recognition for creative design solutions"
     ],
-  "mentors": ["DesCon Core Team"]
-},
-{
-  "id": "model-mania-descon",
-  "title": "Model Mania",
-  "description": "A 3D character modelling competition encouraging creativity with no theme or limits.",
-  "image": "/modelmania.png",
-  "tags": ["3D Modelling", "Character Design", "Blender", "Fusion 360"],
-  "status": "Ongoing",
-  "date": "Jan 2026",
-  "duration": "Submission-based competition",
-  "mode": "Online Submission",
-  "aiHint": "3d character modeling competition",
-  "overview": "Model Mania is a 3D character modelling competition by DesCon Society where participants bring characters to life using Blender, Fusion 360, or any 3D software of their choice. Participants can design an original character or recreate a favorite fictional icon, with complete creative freedom and no predefined theme.",
-  "agenda": [
-    "Character ideation and concept selection",
-    "3D modelling using preferred software",
-    "Detailing, texturing, and rendering",
-    "Final submission for evaluation"
-  ],
-  "takeaways": [
-    "Hands-on experience in 3D character modelling",
-    "Certificates and recognition",
-    "Opportunity to win exciting prizes"
-  ],
-  "resources": [
-    { "label": "Registration Link", "href": "https://forms.gle/X1i1zssQ933Hw8Hz5" },
-    { "label": "Problem statement Link", "href": "https://docs.google.com/document/d/1UONYWjDKkw9JuYt1HQf_eaO7_vVEQ6Ol8TjhF2op0vE/edit?usp=sharing" }
-  ],
-  "mentors": ["DesCon Society"]
-}
-
+    "resources": [],
+    "mentors": [
+      "DesCon Society"
+    ]
+  },
+  {
+    "id": "blender-workshop-descon",
+    "title": "Blender Workshop",
+    "description": "Introduction to 3D modeling, texturing, and rendering workflows using Blender.",
+    "image": "/blender-workshop.png",
+    "tags": [
+      "Blender",
+      "3D Modelling",
+      "Rendering",
+      "Visualization"
+    ],
+    "status": "Past",
+    "date": "Feb 14, 2026",
+    "duration": "Hands-on session",
+    "mode": "In-person · Campus",
+    "aiHint": "blender 3d modeling texturing",
+    "overview": "A Blender workshop was conducted to introduce students to 3D modeling, texturing, and rendering workflows. The session complemented DesCon’s modeling-focused projects and competitions by providing practical exposure to industry-relevant visualization tools. Number of participants: 25 students.",
+    "agenda": [
+      "Introduction to Blender interface",
+      "3D Modeling techniques",
+      "Texturing and material application",
+      "Lighting and rendering workflows"
+    ],
+    "takeaways": [
+      "Skills in professional 3D visualization",
+      "Understanding of rendering pipelines",
+      "Confidence in using Blender for design"
+    ],
+    "resources": [
+      {
+        "label": "Workshop Slides",
+        "href": "https://drive.google.com/file/d/1bExSqj2POrXE3zZfgnrgKhtfprBGe706/view?usp=sharing"
+      }
+    ],
+    "mentors": [
+      "DesCon Core Team"
+    ]
+  },
+  {
+    "id": "matlab-workshop-descon",
+    "title": "MATLAB Workshop",
+    "description": "A workshop to familiarize students with basic scripting, data handling, and visualization techniques in MATLAB.",
+    "image": "/matlab-workshop.png",
+    "tags": [
+      "MATLAB",
+      "Data Analysis",
+      "Scripting",
+      "Computational Modeling"
+    ],
+    "status": "Past",
+    "date": "Jan 24, 2026",
+    "duration": "Hands-on session",
+    "mode": "In-person · Campus",
+    "aiHint": "matlab scripting data visualization",
+    "overview": "A MATLAB workshop was conducted to familiarize students with basic scripting, data handling, and visualization techniques. The session supported participants involved in analytical and AI-driven projects, particularly those related to computational modeling and infrastructure analysis. Number of participants: 45 students.",
+    "agenda": [
+      "MATLAB basics and scripting",
+      "Data handling and processing",
+      "Visualization techniques",
+      "Support for computational projects"
+    ],
+    "takeaways": [
+      "Foundational skills in MATLAB",
+      "Ability to process and visualize data",
+      "Understanding of computational modeling tools"
+    ],
+    "resources": [
+      {
+        "label": "Workshop Slides",
+        "href": "https://drive.google.com/file/d/1gUBUYSiuZhyFHbqv8UtnaBK4dw2SdbRz/view?usp=sharing"
+      }
+    ],
+    "mentors": [
+      "DesCon Core Team"
+    ]
+  },
+  {
+    "id": "autocad-101-descon",
+    "title": "AutoCAD Basics Workshop",
+    "description": "Beginner-friendly hands-on workshop introducing 2D drafting and basic 3D modelling using AutoCAD.",
+    "image": "/autodesk101.png",
+    "tags": [
+      "AutoCAD",
+      "CAD",
+      "Design",
+      "3D Modelling"
+    ],
+    "status": "Past",
+    "date": "Jan 15, 2026",
+    "duration": "2.5-hour workshop",
+    "mode": "In-person · Campus",
+    "aiHint": "autocad interface drafting",
+    "overview": "An introductory workshop designed to help students understand how real-world designs begin as digital drawings. Participants explored AutoCAD’s interface, practiced essential 2D tools, and took their first steps into basic 3D modelling. Number of participants: 25 students.",
+    "agenda": [
+      "AutoCAD interface and navigation",
+      "Core 2D drawing and modify tools",
+      "Text, dimensions, and best practices",
+      "Introduction to 3D modelling tools"
+    ],
+    "takeaways": [
+      "Confidence using AutoCAD for academic work",
+      "Foundation in 2D drafting workflows",
+      "Understanding of basic 3D modelling concepts"
+    ],
+    "resources": [
+      {
+        "label": "Workshop Slides",
+        "href": "https://drive.google.com/file/d/1m1gLfhJyABfe1rbR3TVR4m-Cgp-wKBtS/view?usp=sharing"
+      }
+    ],
+    "mentors": [
+      "DesCon Core Team"
+    ]
+  },
+  {
+    "id": "model-mania-descon",
+    "title": "Model Mania – Character to Life",
+    "description": "A 3D character modelling competition where participants were challenged to bring characters to life using Blender or other 3D software.",
+    "image": "/modelmania.png",
+    "tags": [
+      "3D Modelling",
+      "Character Design",
+      "Blender",
+      "Competition"
+    ],
+    "status": "Past",
+    "date": "Jan 14–20, 2026",
+    "duration": "Week-long competition",
+    "mode": "Online Submission",
+    "aiHint": "3d character modeling competition",
+    "overview": "Model Mania was a week-long modelling competition where participants were challenged to bring characters to life using Blender or other 3D modelling software. The competition encouraged creativity, technical proficiency, and originality in digital design. Number of submissions: 15.",
+    "agenda": [
+      "Character ideation and concept selection",
+      "3D modelling using preferred software",
+      "Detailing, texturing, and rendering",
+      "Final submission for evaluation"
+    ],
+    "takeaways": [
+      "Hands-on experience in 3D character modelling",
+      "Certificates and recognition",
+      "Portfolio development"
+    ],
+    "resources": [
+      {
+        "label": "Problem statement Link",
+        "href": "https://docs.google.com/document/d/1UONYWjDKkw9JuYt1HQf_eaO7_vVEQ6Ol8TjhF2op0vE/edit?usp=sharing"
+      }
+    ],
+    "mentors": [
+      "DesCon Society"
+    ]
+  }
 ]
